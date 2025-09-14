@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -Wl,--dependency-file=CMakeFiles/test_palindrom.dir/link.d CMakeFiles/test_palindrom.dir/test/test_palindrom.cpp.o CMakeFiles/test_palindrom.dir/src/palindrom.cpp.o -o test_palindrom  /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a

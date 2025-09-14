@@ -1,0 +1,4 @@
+/workspaces/lab1/build/CMakeFiles/palindrom_checker.dir
+/workspaces/lab1/build/CMakeFiles/test_palindrom.dir
+/workspaces/lab1/build/CMakeFiles/edit_cache.dir
+/workspaces/lab1/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,1 @@
+/usr/local/bin/c++ -Wl,--dependency-file=CMakeFiles/palindrom_checker.dir/link.d CMakeFiles/palindrom_checker.dir/src/main.cpp.o CMakeFiles/palindrom_checker.dir/src/palindrom.cpp.o -o palindrom_checker

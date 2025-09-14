@@ -1,0 +1,5 @@
+if(EXISTS "/workspaces/lab1/build/test_palindrom[1]_tests.cmake")
+  include("/workspaces/lab1/build/test_palindrom[1]_tests.cmake")
+else()
+  add_test(test_palindrom_NOT_BUILT test_palindrom_NOT_BUILT)
+endif()
