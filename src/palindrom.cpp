@@ -1,29 +1,26 @@
 #include "palindrom.h"
-#include <bits/stdc++.h>
+#include <string>
+#include <algorithm>
+#include <cctype>
 
 bool checkPalindrom(std::string s) {
-    // Независимость от регистра
-   std::transform(
-        s.begin(), 
-        s.end(), 
-        s.begin(),
-        [](unsigned char c) {return std::tolower(c);}
-    );
-
-    // Убираем пробелы
-    s.erase(
-        std::remove_if(s.begin(), 
-        s.end(),
-        [](unsigned char c) {return std::isspace(c);}),
-        s.end()
-    );
-    std::cout << s << "\n";
-
-    // Осуществляем проверку
-    for (int i = 0; i < s.length() / 2; ++i) {
-        if (s[i] != s[s.length() - i - 1]) {
+    // Нижний регистр
+    std::transform(s.begin(), s.end(), s.begin(), ::tolower);
+    
+    // Удаляем пробелы
+    s.erase(std::remove(s.begin(), s.end(), ' '), s.end());
+    
+    if (s.empty()) {
+        return true;
+    }
+    
+    size_t left = 0, right = s.length() - 1;
+    while (left < right) {
+        if (s[left] != s[right]) {
             return false;
         }
+        left++, right--;
     }
+    
     return true;
 }

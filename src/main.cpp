@@ -1,12 +1,20 @@
 #include "palindrom.h"
+#include <iostream>
 #include <string>
-#include <stdbool.h>
 
 int main() {
-    std::string s;
-    std::getline(std::cin, s);
+    std::string input;
     
-    std::cout << checkPalindrom(s) << "\n";
-
+    std::cout << "Ввод: ";
+    std::getline(std::cin, input);
+    
+    bool result = checkPalindrom(input);
+    
+    if (result) {
+        std::cout << "Палиндром" << "\n";
+    } else {
+        std::cout << "Не палиндром" << "\n";
+    }
+    
     return 0;
 }

@@ -1,7 +1,7 @@
-#ifndef PALINDROM_HPP_
-#define PALINDROM_HPP_
+#ifndef PALINDROM_H
+#define PALINDROM_H
 
-#include <iostream>
+#include <string>
 
 bool checkPalindrom(std::string s);
 
