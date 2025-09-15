@@ -18,3 +18,6 @@ int main() {
     
     return 0;
 }
+
+// ./palindrom_checker
+// ./test_palindrom
